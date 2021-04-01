@@ -1,0 +1,8 @@
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+    width: $long-content; 
+    height: $large-content;
+    background-color: $couleur-principal;  
+    padding: $taille-padding-cont;
+}

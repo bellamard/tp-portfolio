@@ -6,15 +6,21 @@
     background-color: $couleur-principal;  
     padding: $taille-padding-cont;
     color: $couleur-text2;
-    animation: black_white 10s infinite;    
+    animation: black_white 10s infinite;
+     
     
 }
 .foot-items{
     font-size: 1.6rem; 
     .contact{
-    display: block;
-    text-decoration: none;
-    color:$couleur-text2;
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+        color:$couleur-text2;
+    }
+    h3{
+        text-decoration: underline;
+        color: $couleur-texte3;
     }
     
 }
@@ -31,6 +37,11 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.content-copy{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 
 
 @keyframes black_white{

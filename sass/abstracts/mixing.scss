@@ -12,4 +12,13 @@
     transition-timing-function: ease-in;
     
 }
+@mixin header {
+    background-color: $couleur-mixage;
+    border-radius: 100%;
+    text-align: center;
+    justify-items: center;
+    padding: $taille-padding-head;
+    display: block;
+    margin: $taille-margin-head;
+}
 

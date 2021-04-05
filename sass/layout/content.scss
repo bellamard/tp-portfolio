@@ -1,28 +1,5 @@
-.sect{
-    
-    padding: $taille-padding;
-    margin-top: $taille-margin-head;
-    .contenT{
-        justify-content: center;
-        padding: $taille-padding;
-        font-size: 1.6rem;
-        align-items: center;
-        background-color: red;
-    }
-    .content-head-items{
-        .title{
-            line-height: 0.2rem !important;
 
-        }
-        h3{
-            font-size: 0.9rem;
-        }
-        span{
-            color: $couleur-texte3;
-            font-size: 0.6rem;
-        }
-    }
-    .content-body-items{
-        font-size: 1rem;
-    }
+section{
+    width: 80%;
+    margin: 0 auto;
 }

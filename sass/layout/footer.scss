@@ -45,11 +45,18 @@
 
 
 @keyframes black_white{
-    from{
+    0%{
          background-color: $couleur-principal;
          color: $couleur-texte1;
 
-    }to{
+    }25%{
+        background-color: $couleur-second;
+        color: $couleur-text2;
+    } 75%{
+         background-color: $couleur-principal;
+         color: $couleur-texte1;
+
+    }100%{
         background-color: $couleur-second;
         color: $couleur-text2;
     }

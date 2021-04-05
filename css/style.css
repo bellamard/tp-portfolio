@@ -44,6 +44,39 @@
   font-size: 62.5%;
 }
 
+.content-lang {
+  width: 100%;
+  background-color: #505050;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.content-lang .language {
+  font-size: 2.1rem;
+  color: #d8d9db;
+  padding: 5px;
+  background-color: red;
+}
+.content-lang .language i {
+  color: black;
+}
+.content-lang .language i:hover, .content-lang .language i:focus {
+  background-color: black;
+  color: white;
+}
+.content-lang .niveau {
+  background-color: white;
+  display: none;
+  width: 100%;
+}
+.content-lang .niveau .progressbar {
+  margin: 5px;
+}
+.content-lang .niveau .pourcent {
+  font-size: 1.5rem;
+}
+
 .foot {
   display: flex;
   flex-direction: column;
@@ -89,38 +122,73 @@
 }
 
 @keyframes black_white {
-  from {
+  0% {
     background-color: #000;
     color: #d8d9db;
   }
-  to {
+  25% {
+    background-color: #FFFF;
+    color: #353536;
+  }
+  75% {
+    background-color: #000;
+    color: #d8d9db;
+  }
+  100% {
     background-color: #FFFF;
     color: #353536;
   }
 }
-.sect {
+.nav {
+  background-color: #505050;
   padding: 10px;
-  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.sect .contenT {
-  justify-content: center;
-  padding: 10px;
-  font-size: 1.6rem;
-  align-items: center;
-  background-color: red;
+.nav .navbar li {
+  list-style: none;
+  text-decoration: none;
+  margin: 4px;
+  font-size: 1.7rem;
 }
-.sect .content-head-items .title {
-  line-height: 0.2rem !important;
+.nav .navbar li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
 }
-.sect .content-head-items h3 {
-  font-size: 0.9rem;
+.nav .navbar li a:hover, .nav .navbar li a:focus {
+  color: #d8d9db;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  border-radius: 5px;
 }
-.sect .content-head-items span {
+.nav .navbar li .select {
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
   color: #0439e7;
-  font-size: 0.6rem;
+  background-color: #FFFF;
 }
-.sect .content-body-items {
-  font-size: 1rem;
+.nav .navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFF;
+  margin: 5px;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

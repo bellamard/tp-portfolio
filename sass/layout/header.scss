@@ -1,38 +1,31 @@
-
-.content-lang{
+.content-lang {
     width: 100%;
     background-color: $couleur-mixage;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-    
-    .language{
 
-    font-size: 2.1rem;
-    color: $couleur-texte1;
-    padding: $taille-padding-btn;
-    background-color: red;
-    i{
-        color: black;
-    }
-    i:hover, i:focus{
-        background-color: black;
-        color: white;         
+    .language {
+
+        font-size: 2.1rem;
+        color: $couleur-texte1;
+        padding: $taille-padding-btn;
+        background-color: red;
+        i {
+            color: black;
+        }
+        i:hover,
+        i:focus {
+            background-color: black;
+            color: white;
+
+        }
         
     }
-   
-    }
     .niveau{
-        background-color: white;
-        display: none;
         width: 100%;
-        .progressbar{
-           margin: $taille-margin-btn;
-        }
-        .pourcent{
-            font-size: 1.5rem;
-
-        }
+        color: $couleur-texte3;
+        background-color: $couleur-mixage;
     }
+    
 }

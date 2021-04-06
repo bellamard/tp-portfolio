@@ -1,5 +1,23 @@
-
 section{
-    width: 80%;
-    margin: 0 auto;
+   width: 100%;
+
 }
+.centent-grid{
+    padding: $taille-padding-head;
+    
+}
+
+
+ @keyframes textup{
+     0%{
+         transform: translateY(0px);
+         opacity: 0;
+     }
+ }
+
+
+
+
+
+
+

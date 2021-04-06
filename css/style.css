@@ -49,7 +49,6 @@
   background-color: #505050;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
 }
 .content-lang .language {
@@ -61,20 +60,15 @@
 .content-lang .language i {
   color: black;
 }
-.content-lang .language i:hover, .content-lang .language i:focus {
+.content-lang .language i:hover,
+.content-lang .language i:focus {
   background-color: black;
   color: white;
 }
 .content-lang .niveau {
-  background-color: white;
-  display: none;
   width: 100%;
-}
-.content-lang .niveau .progressbar {
-  margin: 5px;
-}
-.content-lang .niveau .pourcent {
-  font-size: 1.5rem;
+  color: #0439e7;
+  background-color: #505050;
 }
 
 .foot {
@@ -161,6 +155,9 @@ nav .nav-link a {
   font-weight: bold;
   font-size: 15px;
 }
+nav .nav-link a:hover, nav .nav-link a:focus {
+  border-bottom: 1.5px, dotted, #d8d9db;
+}
 nav .logos {
   color: #505050;
   font-size: 1.6rem;
@@ -195,7 +192,7 @@ nav .logos {
     right: 0;
     height: 50vh;
     top: 20px;
-    background-color: chocolate;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,8 +236,18 @@ nav .logos {
 }
 
 section {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.centent-grid {
+  padding: 20px;
+}
+
+@keyframes textup {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

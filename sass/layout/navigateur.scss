@@ -17,6 +17,11 @@ nav {
             letter-spacing: 3px;
             font-weight: bold;
             font-size: 15px;
+            &:hover, &:focus{
+                border-bottom: 1.5px, dotted, $couleur-texte1;
+
+            }
+
 
         }
     }
@@ -59,7 +64,7 @@ nav {
         right: 0;
         height: 50vh;
         top: 20px;
-        background-color: chocolate;
+        background-color: $couleur-principal;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -11,7 +11,7 @@
             "prenom": "Bellamard",
             "nationalité": "Congolaise",
             "profession": "Dév.full stack",
-            "img": "/images/output-onlinepngtools (1).png",
+            "img": "/images/output-onlinepngtools.png",
             "pdf": "/src/"
         }
     ],
@@ -67,7 +67,8 @@
                     "nom": "KIALA",
                     "prenom": "Bellamard"
                 }
-            ]
+            ],
+            "commentaire":"Salut, je m'appelle bellamard KIALA. Je suis un ingénieur web full-stack avec une expérience dans le développement de logiciels, la gestion de projet et en UI/UX Design. Mon expérience antérieure m'a aidé à développer des compétences en ludification, en résolution de problèmes et en organisation. Je suis ravi d'intégrer ces compétences dans mon parcours de développement Web."
         }
     ]
 }

@@ -265,6 +265,9 @@ section {
   flex-direction: column;
   align-items: center;
 }
+section h1, section h2, section h3, section h4 {
+  font-family: "Press_Start_2P", sans-serif;
+}
 
 .content-grid {
   width: 80%;
@@ -285,16 +288,27 @@ section {
 .box {
   display: flex;
   justify-content: space-evenly;
+  /* h3{
+      font-family: "Press_Start_2P", sans-serif;
+  } */
 }
 .box .text-box {
   width: 45%;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: start;
+  font-family: "Press_Start_2P", sans-serif;
 }
 .box .text-cv {
   width: 45%;
   font-size: 2rem;
   text-align: start;
+  font-family: "Press_Start_2P", sans-serif;
+}
+.box .text-cv ul {
+  list-style: none;
+  text-decoration: none;
+}
+.box .text-cv h2 {
   font-family: "Press_Start_2P", sans-serif;
 }
 .box .bloc-projet {
@@ -347,7 +361,7 @@ section {
   .box {
     flex-direction: column;
   }
-  .box .text-box {
+  .box .text-box, .box .text-cv, .box .bloc-projet {
     width: 100%;
     font-size: 2rem;
     text-align: start;

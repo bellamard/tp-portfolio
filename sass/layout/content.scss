@@ -1,23 +1,111 @@
-section{
-   width: 100%;
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
-.centent-grid{
+.content-grid {
+    width: 80%;
+    text-align: center;
+    background-color: $couleur-mixage2;
     padding: $taille-padding-head;
-    
+    border: 4px solid $couleur-principal;
+}
+.content-grid2 {
+    width: 80%;
+    text-align: center;
+    background-color: $couleur-second;
+    padding: $taille-padding-head;
+    border: 4px solid $couleur-principal;
+}
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    .text-box {
+        width: 45%;
+        font-size: 2rem;
+        text-align: start;
+
+    }
+    .text-cv {
+        width: 45%;
+        font-size: 2rem;
+        text-align: start;
+        font-family: "Press_Start_2P", sans-serif;
+    }
+    .bloc-projet {
+        width: 45%;
+        font-size: 2rem;
+        text-align: start;
+        font-family: "Press_Start_2P", sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    .bloc{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid $couleur-principal;
+        padding: $taille-padding;
+        margin: $taille-margin-btn;
+        &-img{
+            margin-right: $taille-margin-btn;
+            width: 40%;
+            border: 1px solid $couleur-principal;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .img-box {
+        width: 45%;
+        border: 4px solid $couleur-principal;
+        img {
+            display: block;
+            width: 100%;
+        }
+        a {
+            font-size: 2.1rem;
+            border: 2px solid $couleur-mixage;
+            font-family: "Press_Start_2P", sans-serif;
+            background-color: $couleur-principal;
+            margin-top: $taille-margin-head;
+            padding: $taille-margin-btn;
+            width: 100%;
+            display: block;
+            &:hover,
+            &:focus {
+                background-color: $couleur-principal;
+                color: $couleur-texte1;
+            }
+
+        }
+    }
+}
+@media screen and(max-width: 750px) {
+    .box {
+        flex-direction: column;
+        .text-box {
+            width: 100%;
+            font-size: 2rem;
+            text-align: start;
+
+        }
+        .img-box {
+            width: 100%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
 }
 
 
- @keyframes textup{
-     0%{
-         transform: translateY(0px);
-         opacity: 0;
-     }
- }
-
-
-
-
-
-
-
+@keyframes textup {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}

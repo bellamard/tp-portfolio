@@ -1,14 +1,14 @@
 .content-lang {
     width: 100%;
-    background-color: $couleur-mixage;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    background-color: $couleur-mixage2;
 
     .language {
-
+        width: 400px;
         font-size: 2.1rem;
         color: $couleur-texte1;
+        text-align: center;
         padding: $taille-padding-btn;
         background-color: red;
         i {
@@ -20,12 +20,32 @@
             color: white;
 
         }
-        
+
     }
-    .niveau{
-        width: 100%;
+    .progress {
+        background-color: white;
+        width: 400px;
         color: $couleur-texte3;
-        background-color: $couleur-mixage;
+        font-size: 3rem;
+        font-family: "Press_Start_2P", sans-serif;
+        transform: translateY(10%);
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
+        .js, .html, .git, .sass, .css{
+            margin-top: $taille-padding-btn;
+            width: 60px;
+            height: 5px;
+            background-color: $couleur-mixage2;
+            transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
+            
+        }
     }
-    
+    .haut {
+        transform: translateY(-105%);
+        opacity: 1;
+
+    }
+
+
 }

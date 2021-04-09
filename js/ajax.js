@@ -6,7 +6,7 @@ const textbox = document.querySelector('#textbox');
 const blocprojet = document.querySelector('#blocprojet');
 
 
-fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/moi")
+fetch("http://localhost:3000/moi")
     .then((reponse) => {
         return reponse.json();
     })
@@ -25,7 +25,7 @@ fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/moi")
 
     })
 
-fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/cv")
+fetch("http://localhost:3000/cv")
     .then((reponse) => {
         return reponse.json();
     })
@@ -66,7 +66,7 @@ fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/cv")
     });
 cv.appendChild(ul);
 
-fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/projets")
+fetch("http://localhost:3000/projets")
     .then(function (response) {
         return response.json();
     })

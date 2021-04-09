@@ -90,7 +90,7 @@
   opacity: 1;
 }
 .content-lang .ani0 {
-  width: 60%;
+  width: 60% !important;
 }
 .content-lang .ani1 {
   width: 96% !important;
@@ -283,6 +283,10 @@ section {
 }
 section h1, section h2, section h3, section h4 {
   font-family: "Press_Start_2P", sans-serif;
+}
+
+.hidden {
+  display: none;
 }
 
 .content-grid {

@@ -11,7 +11,7 @@ const navSlive = () => {
             if (link.style.animation) {
                 link.style.animation = ''
             } else {
-                link.style.animation = `navLinkfade 0.5s ease forwards ${index / 7 + 0.8}s`;
+                link.style.animation = `navLinkfade 1.5s ease forwards ${index / 7 + 0.8}s`;
             }
 
         });
@@ -52,19 +52,10 @@ const language = () => {
     });
 
 }
-const progressbar =() =>{
-    const progress=[60, 96, 90, 92, 98];
-    const pro=document.querySelectorAll('.niveau div');
-    pro.forEach((tab, index)=>{
-        /* if(tab.style.animation){
-            tab.style.animation='';
-        }else{
-            tab.style.animation=''
-        } */
-        console.log(tab.className.set)
-        
-    });
+const menu =() =>{
+    const section=document.querySelectorAll('section');
+    section.classList.toggle('hidden');
 }
-progressbar();
+menu();
 language();
 navSlive();

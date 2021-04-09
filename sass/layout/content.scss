@@ -50,29 +50,47 @@ h1, h2,h3,h4{
     }
     .bloc-projet {
         width: 45%;
+        height: 620px;
         font-size: 2rem;
         text-align: start;
         font-family: "Press_Start_2P", sans-serif;
         display: flex;
         flex-direction: column;
+        overflow-y: auto;
     }
     .bloc{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         border: 1px solid $couleur-principal;
         padding: $taille-padding;
         margin: $taille-margin-btn;
+        &:nth-child(odd){
+            background-color: $couleur-mixage;
+        }
+        &:hover, &:focus{
+            background-color: $couleur-principal;
+            color: $couleur-texte1;
+        }
         &-img{
             margin-right: $taille-margin-btn;
             width: 40%;
-            border: 1px solid $couleur-principal;
             img{
                 width: 100%;
             }
         }
+        .blocp{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid $couleur-principal;
+        }
+        .bloc-text{
+            width: 58%;
+            font-size: 1.1rem;
+        }
     }
     .img-box {
         width: 45%;
+        height: 50%;
         border: 4px solid $couleur-principal;
         img {
             display: block;
@@ -123,3 +141,4 @@ h1, h2,h3,h4{
         opacity: 0;
     }
 }
+

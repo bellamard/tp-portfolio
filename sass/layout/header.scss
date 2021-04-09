@@ -34,10 +34,11 @@
         transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
         .js, .html, .git, .sass, .css{
             margin-top: $taille-padding-btn;
-            width: 60px;
+            width: 0px;
             height: 5px;
+            font-size: 0.6rem;
             background-color: $couleur-mixage2;
-            transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
+            transition: all 2.5s cubic-bezier(0.92, 0.09, 0.57, 1);
             
         }
     }
@@ -46,6 +47,31 @@
         opacity: 1;
 
     }
+    .ani0 {
+    
+        width: 60%;
+    
+}
+.ani1 {
+    
+        width: 96% !important;
+   
+}
+.ani2 {
+   
+        width: 90% !important;
+   
+}
+.ani3 {
+    
+        width: 92% !important;
+   
+}
+.ani4 {
+    
+        width: 90% !important;
+    
+}
 
 
 }

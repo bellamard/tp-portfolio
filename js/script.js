@@ -26,7 +26,8 @@ const navSlive = () => {
 const language = () => {
     const lang = document.querySelectorAll('.icon');
     const bar = document.querySelector('.progress');
-    const comp = document.querySelectorAll('.niveau2')
+    const comp = document.querySelectorAll('.niveau2');
+    const pro= document.querySelectorAll('.niveau div');
     lang.forEach((langu, index) => {
         langu.addEventListener('click', (event) => {
             event.preventDefault();
@@ -39,6 +40,13 @@ const language = () => {
                     
                 }
             });
+
+            pro.forEach((link, index)=>{
+                
+                    link.classList.toggle(`ani${index}`);
+                    
+                
+            })
         });
 
     });

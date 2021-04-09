@@ -79,14 +79,30 @@
 }
 .content-lang .progress .js, .content-lang .progress .html, .content-lang .progress .git, .content-lang .progress .sass, .content-lang .progress .css {
   margin-top: 5px;
-  width: 60px;
+  width: 0px;
   height: 5px;
+  font-size: 0.6rem;
   background-color: #c0c0c0;
-  transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
+  transition: all 2.5s cubic-bezier(0.92, 0.09, 0.57, 1);
 }
 .content-lang .haut {
   transform: translateY(-105%);
   opacity: 1;
+}
+.content-lang .ani0 {
+  width: 60%;
+}
+.content-lang .ani1 {
+  width: 96% !important;
+}
+.content-lang .ani2 {
+  width: 90% !important;
+}
+.content-lang .ani3 {
+  width: 92% !important;
+}
+.content-lang .ani4 {
+  width: 90% !important;
 }
 
 .foot {
@@ -313,29 +329,47 @@ section h1, section h2, section h3, section h4 {
 }
 .box .bloc-projet {
   width: 45%;
+  height: 620px;
   font-size: 2rem;
   text-align: start;
   font-family: "Press_Start_2P", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 .box .bloc {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: 1px solid #000;
   padding: 10px;
   margin: 5px;
 }
+.box .bloc:nth-child(odd) {
+  background-color: #505050;
+}
+.box .bloc:hover, .box .bloc:focus {
+  background-color: #000;
+  color: #d8d9db;
+}
 .box .bloc-img {
   margin-right: 5px;
   width: 40%;
-  border: 1px solid #000;
 }
 .box .bloc-img img {
   width: 100%;
 }
+.box .bloc .blocp {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+}
+.box .bloc .bloc-text {
+  width: 58%;
+  font-size: 1.1rem;
+}
 .box .img-box {
   width: 45%;
+  height: 50%;
   border: 4px solid #000;
 }
 .box .img-box img {

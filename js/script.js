@@ -52,10 +52,10 @@ const language = () => {
     });
 
 }
-const menu =() =>{
+/* const menu =() =>{
     const section=document.querySelectorAll('section');
-    section.classList.toggle('hidden');
+    console.log(section);
 }
-menu();
+menu(); */
 language();
 navSlive();

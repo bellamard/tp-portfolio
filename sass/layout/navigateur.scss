@@ -23,13 +23,15 @@ nav {
             font-size: 15px;
             padding: $taille-nav;
             &:hover,
-            &:focus {
+            &:focus{
                 background-color: $couleur-second;
                 color: $couleur-mixage;
             }
-
-
         }
+        .selecteur {
+                background-color: $couleur-second;
+                color: $couleur-mixage;
+            }
     }
     .logos {
         color: $couleur-mixage;

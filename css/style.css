@@ -56,7 +56,7 @@
   color: #d8d9db;
   text-align: center;
   padding: 5px;
-  background-color: red;
+  background-color: #c0c0c0;
 }
 .content-lang .language i {
   color: black;
@@ -198,6 +198,10 @@ nav .nav-link a:hover, nav .nav-link a:focus {
   background-color: #FFFF;
   color: #505050;
 }
+nav .nav-link .selecteur {
+  background-color: #FFFF;
+  color: #505050;
+}
 nav .logos {
   color: #505050;
   font-size: 1.6rem;
@@ -280,13 +284,22 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
 }
 section h1, section h2, section h3, section h4 {
   font-family: "Press_Start_2P", sans-serif;
 }
 
-.hidden {
-  display: none;
+.accueil {
+  display: flex !important;
+}
+
+.cv {
+  display: flex !important;
+}
+
+.projet {
+  display: flex !important;
 }
 
 .content-grid {

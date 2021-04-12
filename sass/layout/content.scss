@@ -3,15 +3,25 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s cubic-bezier(0.92, 0.09, 0.57, 1);
+    
 h1, h2,h3,h4{
     font-family: "Press_Start_2P", sans-serif;
 }
 
 }
-.hidden{
-    display: none;
-    
+.accueil{
+    display: flex !important;
 }
+.cv{
+    display: flex !important;
+}
+.projet{
+    display: flex !important;
+}
+
+
+
 .content-grid {
     width: 80%;
     text-align: center;

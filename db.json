@@ -1,0 +1,15 @@
+{
+    " projets " : [
+    { " id " : 1 , " title " : "portofolio" , "url" : "https://github.com/bellamard/tp-portfolio" },
+    { " id " : 2 , " title " : "cinefilms" , "url" : "https://github.com/bellamard/cinefilms" },
+    { " id " : 3 , " title " : "cinefilms" , "url" : "https://github.com/bellamard/cinefilms" }
+
+  ],
+  " reseaux " : [
+    { " id " : 1 , " name " : "facebook" , "lien" : "https://web.facebook.com/bellamard.kiala" },
+    { " id " : 2 , " name " : "twitter" , "lien" : "https://web.facebook.com/bellamard.kiala" }
+  ],
+  " profil " : { "nom" : "kiala",
+                "prenom": "Bellamard",
+                "fonction":"Dév. fullstack" }
+}

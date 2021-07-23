@@ -1,80 +1,15 @@
 {
-    "cv": [
-        {
-            "id": 1,
-            "noms": [
-                {
-                    "nom": "KIALA",
-                    "postnom": "Mansaluka"
-                }
-            ],
-            "prenom": "Bellamard",
-            "nationalité": "Congolaise",
-            "profession": "Dév.full stack",
-            "img": "./images/output-onlinepngtools.png",
-            "pdf": "./images/cv.svg"
-        }
-    ],
-    "projets": [
-        {
-            "id": 1,
-            "titre1": "Structure un document HTML à partir d'une maquette",
-            "date": "11.02.2021",
-            "img": "./images/conf.jpg",
-            "contenu": "Structurer un document HTML en respectant la maquette tout en omettant tous les éléments de style(couleurs, positionnement) pour ne pas avoir du code CSS.",
-            "liens": "https://bellamard.github.io/tp2/"
-        },
-        {
-            "id": 2,
-            "titre1": "Structurer un document HTML",
-            "date": "09.02.2021",
-            "img": "./images/projet1.jpg",
-            "contenu": "Structurer un contenu dans deux pages HTML et les lier par un lien. Faire attention à utiliser les bonnes balises pour le bon contenu.",
-            "liens": "https://bellamard.github.io/tp1/"
-        },
-        {
-            "id": 3,
-            "titre1": "Styliser des pages HTML avec du CSS",
-            "date": "15.02.2021",
-            "img": "./images/projet2.png",
-            "contenu": "Styliser les 2 pages HTML réalisée dans le brief projet 'Structurer un contenu HTML' à l'aide du CSS.",
-            "liens": "https://bellamard.github.io/tp3/"
-        },
-        {
-            "id": 3,
-            "titre1": "Reproduire fidèlement la maquette d'une formulaire HTML",
-            "date": "16.02.2021",
-            "img": "./images/projet3.jpg",
-            "contenu": "Reproduire la maquette d'un formulaire de création de compte dans un site des freelances",
-            "liens": "https://bellamard.github.io/TP4/"
-        },
-        {
-            "id": 4,
-            "titre1": "Reproduction de la page d'accueil et la page Emploi du site web de Kinshasa Digital",
-            "date": "23.02.2021",
-            "img": "./images/projet3.jpg",
-            "contenu": "Le travail demandé est de reproduire les page d'accueil et  emploi du site de Kinshasa Digital à partir d'une maquette et ressources fournis par le graphiste",
-            "liens": "https://bellamard.github.io/tp5/"
-        },
-        {
-            "id": 5,
-            "titre1": "Réaliser une liste de contacts",
-            "date": "23.02.2021",
-            "img": "./images/projet3.jpg",
-            "contenu": "A partir d'une maquette réaliser une liste de contacts",
-            "liens": "https://bellamard.github.io/tp-portfolio/"
-        }
-    ],
-    "moi": [
-        {
-            "id": 1,
-            "noms": [
-                {
-                    "nom": "KIALA",
-                    "prenom": "Bellamard"
-                }
-            ],
-            "commentaire":"Salut, je m'appelle bellamard KIALA. Je suis un ingénieur web full-stack avec une expérience dans le développement de logiciels, la gestion de projet et en UI/UX Design. Mon expérience antérieure m'a aidé à développer des compétences en ludification, en résolution de problèmes et en organisation. Je suis ravi d'intégrer ces compétences dans mon parcours de développement Web."
-        }
-    ]
+    " projets " : [
+    { " id " : 1 , " title " : "portofolio" , "url" : "https://github.com/bellamard/tp-portfolio" },
+    { " id " : 2 , " title " : "cinefilms" , "url" : "https://github.com/bellamard/cinefilms" },
+    { " id " : 3 , " title " : "cinefilms" , "url" : "https://github.com/bellamard/cinefilms" }
+
+  ],
+  " reseaux " : [
+    { " id " : 1 , " name " : "facebook" , "lien" : "https://web.facebook.com/bellamard.kiala" },
+    { " id " : 2 , " name " : "twitter" , "lien" : "https://web.facebook.com/bellamard.kiala" }
+  ],
+  " profil " : { "nom" : "kiala",
+                "prenom": "Bellamard",
+                "fonction":"Dév. fullstack" }
 }

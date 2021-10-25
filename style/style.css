@@ -16,8 +16,9 @@ header {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid #e2ad00;
   padding: 1px;
+  padding-bottom: 3px;
 }
 header .logos {
   line-height: 0.2;
@@ -58,7 +59,7 @@ header .nav ul li a {
 }
 header .nav ul li a:hover {
   color: beige;
-  background-color: black;
+  background-color: #e2ad00;
 }
 
 .container {
@@ -71,7 +72,7 @@ header .nav ul li a:hover {
 .container .function {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 5vh;
   width: 50%;
 }
 .container .function h2 {
@@ -182,6 +183,82 @@ footer .copyright {
   padding: 10px;
   text-align: center;
   justify-content: center;
+}
+
+.competence .box_competence {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+}
+.competence .box_competence ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.competence .box_competence ul li {
+  margin: 5px;
+}
+
+.projets {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projets a {
+  display: block;
+  width: 250px;
+  font-size: 4rem;
+  text-decoration: none;
+  color: #e2ad00;
+  background-color: beige;
+  transition: all 1s;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+.projets a:hover {
+  color: beige;
+  background-color: #e2ad00;
+}
+
+.softskill {
+  display: flex;
+}
+.softskill h3 {
+  margin: 3px;
+  padding: 5px;
+  color: beige;
+  background-color: #e2ad00;
+}
+.softskill h3:hover {
+  color: #e2ad00;
+  background-color: beige;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .container .reseaux_sociaux {
+    width: 100%;
+  }
+  .container .function {
+    width: 100%;
+  }
+
+  .box_competence {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

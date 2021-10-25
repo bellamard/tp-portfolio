@@ -1,23 +1,145 @@
 {
-    "projet" : [
-    { " id " : 1 ,
-      " title " : "portofolio" , 
-      "url" : "https://github.com/bellamard/tp-portfolio" },
-    { " id " : 2 , 
-      " title " : "cinefilms" , 
-      "url" : "https://github.com/bellamard/cinefilms" },
-    { " id " : 3 , 
-      " title " : "cinefilms" , 
-      "url" : "https://github.com/bellamard/cinefilms" }
-
+  "projet": [
+    {
+      "id": 1,
+      "title": "portofolio",
+      "url": "https://github.com/bellamard/tp-portfolio"
+    },
+    {
+      "id": 2,
+      "title": "cinefilms",
+      "url": "https://github.com/bellamard/cinefilms"
+    },
+    {
+      "id": 3,
+      "title": "amis robot",
+      "url": "https://github.com/bellamard/cinefilms"
+    }
   ],
-  
-  "reseaux" : [
-    { " id " : 1 , "name" : "facebook" , "lien" : "https://web.facebook.com/bellamard.kiala" },
-    { " id " : 2 , "name" : "twitter" , "lien" : "https://web.facebook.com/bellamard.kiala" }
+  "reseaux": [
+    {
+      " id ": 1,
+      "name": "facebook",
+      "lien": "https://web.facebook.com/bellamard.kiala"
+    },
+    {
+      " id ": 2,
+      "name": "twitter",
+      "lien": "https://web.facebook.com/bellamard.kiala"
+    },
+    {
+      " id ": 3,
+      "name": "linkedin",
+      "lien": "https://web.facebook.com/bellamard.kiala"
+    },
+    {
+      " id ": 4,
+      "name": "github",
+      "lien": "https://web.facebook.com/bellamard.kiala"
+    }
   ],
-  "profil" : { "nom" : "kiala",
-                "prenom": "Bellamard",
-                "fonction":"Dév. fullstack web/mobile",
-                "url_img":"/images/profil2.jpg" }
+  "profil": {
+    "nom": "kiala",
+    "prenom": "Bellamard",
+    "fonction": "Dév. fullstack web/mobile",
+    "url_img": "/images/profil2.jpg"
+  },
+  "competence": [
+    {
+      "frontend": [
+        {
+          "id": 1,
+          "name": "html"
+        },
+        {
+          "id": 2,
+          "name": "CSS"
+        },
+        {
+          "id": 3,
+          "name": "JS"
+        },
+        {
+          "id": 4,
+          "name": "Sass"
+        },
+        {
+          "id": 5,
+          "name": "Reactjs"
+        },
+        {
+          "id": 6,
+          "name": "NextJs"
+        },
+        {
+          "id": 7,
+          "name": "Alpine.js"
+        },
+        {
+          "id": 8,
+          "name": "Gasby"
+        },
+        {
+          "id": 9,
+          "name": "wordpress"
+        },
+        {
+          "id": 10,
+          "name": "bootstrap"
+        }
+      ],
+      "backend": [
+        {
+          "id": 1,
+          "name": "NodeJS"
+        },
+        {
+          "id": 2,
+          "name": "PHP"
+        },
+        {
+          "id": 3,
+          "name": "Strapi"
+        }
+      ],
+      "bdd": [
+        {
+          "id": 1,
+          "name": "Mysql"
+        },
+        {
+          "id": 2,
+          "name": "Mongodb"
+        },
+        {
+          "id": 3,
+          "name": "Graphql"
+        },
+        {
+          "id": 4,
+          "name": "Json-server"
+        }
+      ],
+      "ci": [
+        {
+          "id": 1,
+          "name": "Prettier"
+        },
+        {
+          "id": 2,
+          "name": "ESlink"
+        }
+      ],
+      "autre": [
+        {
+          "id": 1,
+          "name": "Java Android"
+        },
+        {
+          "id": 2,
+          "name": "c# Unity"
+        }
+      ]
+    }
+  ]
 }

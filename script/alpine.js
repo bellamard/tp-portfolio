@@ -19,13 +19,32 @@ document.addEventListener("alpine:init", () => {
     ci: [],
     loadPosts() {
       this.loading = true;
-      fetch()
+      fetch("http://localhost:3000/competence")
         .then((response) => response.json())
         .then((competence) => {
-          this.frontends = competence.frontend;
-          this.backends = competence.backend;
-          this.bdd = competence.bdd;
-          this.this.loading = false;
+          const { frontend, backend, bdd, ci, autre } = competence;
+          this.frontends = frontend;
+          console.log(frontend);
+          this.backends = backend;
+          this.bdd = bdd;
+          this.loading = false;
+          this.loaded = true;
+        })
+        .catch((error) => console.log(error));
+    },
+  }));
+
+  Alpine.data("posts2", () => ({
+    loading: false,
+    loaded: false,
+    projets: [],
+    loadPosts() {
+      this.loading = true;
+      fetch("http://localhost:3000/projet")
+        .then((response) => response.json())
+        .then((projet) => {
+          this.projets = projet;
+          this.loading = false;
           this.loaded = true;
         })
         .catch((error) => console.log(error));

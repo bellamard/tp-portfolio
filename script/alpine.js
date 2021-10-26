@@ -9,7 +9,7 @@ document.addEventListener("alpine:init", () => {
     },
   }));
 
-  Alpine.data("posts", () => ({
+  Alpine.store("posts", {
     loading: false,
     loaded: false,
     backends: [],
@@ -18,27 +18,35 @@ document.addEventListener("alpine:init", () => {
     autres: [],
     ci: [],
     loadPosts() {
+      if (this.loaded) {
+        return;
+      }
       this.loading = true;
       fetch("http://localhost:3000/competence")
         .then((response) => response.json())
         .then((competence) => {
-          const { frontend, backend, bdd, ci, autre } = competence;
-          this.frontends = frontend;
-          console.log(frontend);
-          this.backends = backend;
-          this.bdd = bdd;
+          for (const key of competence) {
+            this.frontends = key.frontend;
+            this.backends = key.backend;
+            this.bdd = key.bdd;
+            this.autres = key.autre;
+            this.ci = key.ci;
+          }
           this.loading = false;
           this.loaded = true;
         })
         .catch((error) => console.log(error));
     },
-  }));
+  });
 
-  Alpine.data("posts2", () => ({
+  Alpine.store("posts2", {
     loading: false,
     loaded: false,
     projets: [],
     loadPosts() {
+      if (this.loaded) {
+        return;
+      }
       this.loading = true;
       fetch("http://localhost:3000/projet")
         .then((response) => response.json())
@@ -48,6 +56,12 @@ document.addEventListener("alpine:init", () => {
           this.loaded = true;
         })
         .catch((error) => console.log(error));
+    },
+  });
+
+  Alpine.data("posts2", () => ({
+    init() {
+      this.posts2.loadPosts();
     },
   }));
 });

@@ -68,46 +68,44 @@
                     <div>
 
                         <h2>Mes competences</h2>
-                        <div class="box_competence" x-data="posts()">
-                            <p x-show="!loaded">
-                                <button class="btn btn-primary" :disable="loading" @click="loadPosts">voir les competences</button>
+                        <div class="box_competence" x-data="{}">
+                            <p x-show="!$store.posts.loaded">
+                                <button class="voir" :disable="$store.posts.loading" @click="$store.posts.loadPosts()">VOIR COMPETENCES</button>
 
                             </p>
-                            <div class="spinner-border" x-show="loading"></div>
-                            <h3>FONT END</h3>
-                            <template x-for="post in frontends" :key="post.id">
+                            <div class="spinner-border" x-show="$store.posts.loading"></div>
+                            
+                            <template x-for="post in $store.posts.frontends" :key="post.id">
 
-                                <ul id='frontend'>
-                                    <li x-text="post.name">fddfd</li>
-                                </ul>
+                                <div class="hardskill">
+                                    <h3 x-text="post.name"></h3>
+                                </div>
                             </template>
-                            <h3>BACK END</h3>
-                            <template x-for="post in backends" :key="post.id">
 
-                                <ul id='backend'>
-                                    <li x-text="post.name"></li>
-                                </ul>
+                            
+                            <template x-for="post in $store.posts.backends" :key="post.id">
+
+                                <div class="hardskill">
+                                    <h3 x-text="post.name"></h3>
+                                </div>
                             </template>
-                            <h3>BDD</h3>
-                            <template x-for="post in bdd" :key="post.id">
+                            <template x-for="post in $store.posts.bdd" :key="post.id">
 
-                                <ul id='bdd'>
-                                    <li x-text="post.name"></li>
-                                </ul>
+                                <div class="hardskill">
+                                    <h3 x-text="post.name"></h3>
+                                </div>
                             </template>
-                            <h3>CI</h3>
-                            <template x-for="post in ci" :key="post.id">
+                            <template x-for="post in $store.posts.ci" :key="post.id">
 
-                                <ul id='ci'>
-                                    <li x-text="post.name"></li>
-                                </ul>
+                                <div class="hardskill">
+                                    <h3 x-text="post.name"></h3>
+                                </div>
                             </template>
-                            <h3>AUTRE</h3>
-                            <template x-for="post in autres" :key="post.id">
+                            <template x-for="post in $store.posts.autres" :key="post.id">
 
-                                <ul id='autre'>
-                                    <li x-text="post.name"></li>
-                                </ul>
+                                <div class="hardskill">
+                                    <h3 x-text="post.name"></h3>
+                                </div>
                             </template>
 
 
@@ -118,13 +116,13 @@
                 <template x-if="isActive('tab3')">
                     <div>
                         <h2>Mes projets</h2>
-                        <div id='projets' class='projets' x-data="posts2()">
-                            <p x-show="!loaded">
-                                <button class="btn btn-primary" :disable="loading" @click="loadPosts">voir les competences</button>
+                        <div id='projets' class='projets' x-data="{}">
+                            <p x-show="!$store.posts2.loaded">
+                                <button class="voir" :disable="$store.posts2.loading" @click="$store.posts2.loadPosts()">VOIR PROJETS</button>
 
                             </p>
-                            <div class="spinner-border" x-show="loading"></div>
-                            <template x-for="post in projets" :key="post.id">
+                            <div class="spinner-border" x-show="$store.posts2.loading"></div>
+                            <template x-for="post in $store.posts2.projets" :key="post.id">
                                 <a x-text="post.title" x-bind:href="post.url"></a>
                             </template>
                         </div>

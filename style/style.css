@@ -185,19 +185,36 @@ footer .copyright {
   justify-content: center;
 }
 
-.competence .box_competence {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  font-size: 4rem;
-}
-.competence .box_competence ul {
-  list-style: none;
+.box_competence {
   display: flex;
   flex-wrap: wrap;
 }
-.competence .box_competence ul li {
-  margin: 5px;
+
+.hardskill {
+  display: flex;
+  flex-direction: row !important;
+  font-size: 2rem;
+  margin: 2px;
+}
+.hardskill h3 {
+  padding: 15px;
+  background-color: beige;
+  color: #e2ad00;
+}
+.hardskill h3:hover {
+  background-color: #e2ad00;
+  color: beige;
+}
+
+.voir {
+  border: none;
+  padding: 15px;
+  background-color: beige;
+  color: #e2ad00;
+}
+.voir:hover {
+  background-color: #e2ad00;
+  color: beige;
 }
 
 .projets {

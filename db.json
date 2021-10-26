@@ -1,5 +1,5 @@
 {
-  "projet": [
+  "projet":[
     {
       "id": 1,
       "title": "portofolio",
@@ -16,7 +16,7 @@
       "url": "https://github.com/bellamard/cinefilms"
     }
   ],
-  "reseaux": [
+  "reseaux":[
     {
       " id ": 1,
       "name": "facebook",
@@ -25,26 +25,26 @@
     {
       " id ": 2,
       "name": "twitter",
-      "lien": "https://web.facebook.com/bellamard.kiala"
+      "lien": "https://twitter.com/belamard"
     },
     {
       " id ": 3,
       "name": "linkedin",
-      "lien": "https://web.facebook.com/bellamard.kiala"
+      "lien": "https://www.linkedin.com/in/belamard-kiala-152bb5191"
     },
     {
       " id ": 4,
       "name": "github",
-      "lien": "https://web.facebook.com/bellamard.kiala"
+      "lien": "https://github.com/bellamard/"
     }
   ],
-  "profil": {
+  "profil":{
     "nom": "kiala",
     "prenom": "Bellamard",
     "fonction": "Dév. fullstack web/mobile",
     "url_img": "/images/profil2.jpg"
   },
-  "competence": [
+  "competence":[
     {
       "frontend": [
         {

@@ -10,7 +10,7 @@
         <script src="//unpkg.com/alpinejs" defer></script>
         <script src="/script/Script.js" defer></script>
         <link rel="stylesheet" href="style/style.css">
-        <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
+        <link rel="shortcut icon" type="image/jpg" href="/images/png-transparent-bootstrap-logo-computer-software-web-application-portable-document-format-b-purple-template-violet-thumbnail.png"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Bienvenue</title>
     </head>
@@ -25,7 +25,7 @@
             <div class="nav">
                 <ul>
                     <li><a href="#tab1" @click="box">HOME</a></li>
-                    <li><a href="#tab2" @click="box" id="link_competance">COMPETANCES</a></li>
+                    <li><a href="#tab2" @click="box" id="link_competance">COMPETENCES</a></li>
                     <li><a href="#tab3" @click="box" id="link_projets">PROJETS</a></li>
                 </ul>
             </div>
@@ -67,26 +67,42 @@
                 <template x-if="isActive('tab2')" class="competence">
                     <div>
 
-                        <h2>Mes compentances</h2>
-                        <div class="box_competence" >
+                        <h2>Mes competences</h2>
+                        <div class="box_competence" x-data="posts()">
 
-                            
-                            <h3>FONT END</h3>
-                            <ul id='frontend' >
-                                
-                            </ul>
+                            <template x-for="post in frontends" :key="post.id">
+                                <h3>FONT END</h3>
+                                <ul id='frontend'>
+                                    <li x-text="post.name"></li>
+                                </ul>
+                            </template>
 
-                            <h3>BACK END</h3>
-                            <ul id='backend'></ul>
+                            <template x-for="post in backends" :key="post.id">
+                                <h3>BACK END</h3>
+                                <ul id='backend'>
+                                    <li x-text="post.name"></li>
+                                </ul>
+                            </template>
+                            <template x-for="post in bdd" :key="post.id">
+                                <h3>BDD</h3>
+                                <ul id='bdd'>
+                                    <li x-text="post.name"></li>
+                                </ul>
+                            </template>
+                            <template x-for="post in ci" :key="post.id">
+                                <h3>CI</h3>
+                                <ul id='ci'>
+                                    <li x-text="post.name"></li>
+                                </ul>
+                            </template>
+                            <template x-for="post in autres" :key="post.id">
+                                <h3>AUTRE</h3>
+                                <ul id='autre'>
+                                    <li x-text="post.name"></li>
+                                </ul>
+                            </template>
 
-                            <h3>BDD</h3>
-                            <ul id='bdd'></ul>
 
-                            <h3>CI</h3>
-                            <ul id='ci'></ul>
-
-                            <h3>AUTRE</h3>
-                            <ul id='autre'></ul>
                         </div>
                     </div>
 
@@ -114,13 +130,13 @@
                         </ul>
                     </div>
                     <div class="reseau">
-                        <a href="http://">
+                        <a href="https://web.facebook.com/bellamard.kiala">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="http://">
+                        <a href="https://twitter.com/belamard">
                             <i class="bi bi-twitter"></i>
                         </a>
-                        <a href="http://">
+                        <a href="https://www.linkedin.com/in/belamard-kiala-152bb5191">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>

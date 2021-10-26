@@ -93,7 +93,6 @@ fetch("http://localhost:3000/projet")
       const projet_item = document.createElement("a");
       projet_item.setAttribute("href", key.url);
       projet_item.innerText = key.title;
-      // projets.appendChild(projet_item);
       console.log(key.url);
     }
   })

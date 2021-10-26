@@ -8,7 +8,7 @@ let ci = document.querySelector("#ci");
 let autre = document.querySelector("#autre");
 let projets = document.querySelector("#projets");
 
-fetch("http://localhost:3000/profil")
+fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/profil")
   .then((response) => {
     return response.json();
   })
@@ -29,7 +29,7 @@ fetch("http://localhost:3000/profil")
     name_profil.appendChild(erreur);
   });
 
-fetch("http://localhost:3000/reseaux")
+fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/reseaux")
   .then((reponse) => {
     return reponse.json();
   })

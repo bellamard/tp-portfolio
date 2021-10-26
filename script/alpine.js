@@ -22,7 +22,9 @@ document.addEventListener("alpine:init", () => {
         return;
       }
       this.loading = true;
-      fetch("http://localhost:3000/competence")
+      fetch(
+        "https://my-json-server.typicode.com/bellamard/tp-portfolio/competence"
+      )
         .then((response) => response.json())
         .then((competence) => {
           for (const key of competence) {
@@ -48,7 +50,7 @@ document.addEventListener("alpine:init", () => {
         return;
       }
       this.loading = true;
-      fetch("http://localhost:3000/projet")
+      fetch("https://my-json-server.typicode.com/bellamard/tp-portfolio/projet")
         .then((response) => response.json())
         .then((projet) => {
           this.projets = projet;
